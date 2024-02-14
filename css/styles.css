@@ -1,0 +1,199 @@
+/* Lato-Black */
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Lato-BlackItalic */
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Lato-Bold */
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Lato-BoldItalic */
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Lato-Italic */
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Lato-Light */
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Lato-LightItalic */
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Lato-Regular */
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Lato-Thin */
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Lato-ThinItalic */
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Montserrat Font */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Add similar @font-face rules for other Montserrat variations */
+
+/* Roboto Font */
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Apply the fonts to your styles */
+body {
+  font-family: 'Lato', sans-serif; /* Use Lato as the default font */
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif; 
+}
+
+.headline {
+  font-size: 38pt;
+  margin-bottom: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight:900;
+  line-height: 1.25em;
+}
+
+.sub-headline {
+  font-size: 20pt;
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+section {
+  padding: 50px 0 50px 0;
+}
+
+.blue-section {
+  background-color: rgba(65,134,241,0.25);
+  padding: 25px 0 25px 0;
+}
+
+.blue-text {
+  color: rgb(65,134,241);
+}
+
+.red-text {
+  color: rgb(235,66,54);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+svg {
+  display: block;
+  max-width: 100%; 
+  height: auto; 
+}
+
+.svg-container {
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+.svg-container svg {
+  display: block;
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 1199px){
+  .indented-left {
+    padding-left: 18px;
+  }
+  
+  .indented-right {
+    padding-right: 18px;
+  }
+}
