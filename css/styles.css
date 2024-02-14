@@ -110,13 +110,34 @@
   font-style: italic;
 }
 
+:root {
+  --red: rgb(235,66,54);
+  --blue: rgb(65,134,241);
+  --logo-font: 'Lato', sans-serif;
+}
+
+.custom-container {
+  z-index: 2;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 0 4% 30px;
+  overflow: visible;
+}
 
 body {
   font-family: 'Lato', sans-serif; 
 }
 
 h1, h2, h3 {
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Lato', sans-serif;
+  font-weight:900;
+}
+
+.logo-font {
+  font-family: var(--logo-font);
+  font-weight:300;
 }
 
 .headline {
@@ -140,15 +161,29 @@ section {
 
 .blue-section {
   background-color: rgba(65,134,241,0.25);
-  padding: 25px 0 25px 0;
+  background-position: 0 0,0 0;
+  background-size: auto,auto;
+  padding-top: 60px;
 }
 
 .blue-text {
-  color: rgb(65,134,241);
+  color: var(--blue);
 }
 
 .red-text {
-  color: rgb(235,66,54);
+  color: var(--red);
+}
+
+.lg-p-1 {
+  font-size:17pt;
+}
+
+.lg-p-2 {
+  font-size:16pt;
+}
+
+.lg-p-3 {
+  font-size:14pt;
 }
 
 .bold {
@@ -174,8 +209,71 @@ svg {
   object-fit: contain;
 }
 
-@media only screen and (min-width: 1199px){
+.btn-wide {
+  min-width: 50%;
+}
 
+.fade-in-left {
+  animation: fadeInLeft 0.5s ease-in-out;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.5s ease-in-out;
+}
+
+.fade-in-down {
+  animation: fadeInDown 0.5s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 1199px){
   .indented-left {
     padding-left: 18px;
   }
